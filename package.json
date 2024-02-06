@@ -1,0 +1,27 @@
+{
+  "name": "CAPM01",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "express": "^4",
+    "node-pre-gyp": "^0.17.0"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "targets": [
+    {
+      "target_name": "binding",
+      "sources": [
+        "src/binding.cc"
+      ]
+    }
+  ],
+  "devDependencies": {
+    "sqlite": "^3.0.6"
+  }
+}
