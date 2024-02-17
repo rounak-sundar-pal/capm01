@@ -7,11 +7,13 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^7",
+    "@sap/cds-odata-v2-adapter-proxy": "^1.9.21",
     "express": "^4",
     "node-pre-gyp": "^0.17.0"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-purchaseorderapp": "cds watch --open purchaseorderapp/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "targets": [
     {
@@ -22,6 +24,11 @@
     }
   ],
   "devDependencies": {
+    "@sap/ux-specification": "^1.120.3",
     "sqlite": "^3.0.6"
-  }
+  },
+  "sapux": [
+    "app/purchaseorderapp",
+    "app/purchaseorderapp"
+  ]
 }

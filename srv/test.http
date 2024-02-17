@@ -1,0 +1,56 @@
+### Fetch Records from ReadEmployeeSrv
+GET http://localhost:4004/odata/v4/mysrvdemo/ReadEmployeeSrv/02BD2137-0890-1EEA-A6C2-BB55C19787FB
+
+### Post Employee
+POST http://localhost:4004/odata/v4/mysrvdemo/InsertEmployeeSrv
+Content-Type: application/json
+
+{     
+      "ID"       : "02BD2137-0890-1EEA-A6C2-BB55C19787FB",
+      "nameFirst": "Rounak",
+      "nameMiddle": null,
+      "nameLast": "Pal",
+      "nameInitials": null,
+      "sex": "F",
+      "language": "E",
+      "phoneNumber": "+1224374524",
+      "email": "sally.spring@gmail.com",
+      "loginName": "SPRINGS",
+      "Currency_code": "USD",
+      "salaryAmount": 55549,
+      "accountNumber": "111222333",
+      "bankId": "510000655",
+      "bankName": "My Bank of Antioch"
+}
+
+### Update 
+PUT http://localhost:4004/odata/v4/mysrvdemo/UpdateEmployeeSrv/02BD2137-0890-1EEA-A6C2-BB55C19787FB
+Content-Type: application/json
+
+{     
+      "nameFirst": "Rounak",
+      "nameMiddle": null,
+      "nameLast": "Pal"
+}
+
+### Delete
+DELETE http://localhost:4004/odata/v4/mysrvdemo/UpdateEmployeeSrv/02BD2137-0890-1EEA-A6C2-BB55C19787FB
+
+### Get PO Data
+GET http://localhost:4004/odata/v4/catalog/POs/02BD2137-0890-1EEA-A6C2-BB55C1978999
+
+### Boost PO Data
+POST http://localhost:4004/odata/v4/catalog/POs('02BD2137-0890-1EEA-A6C2-BB55C1978999')/CatalogService.boost
+Content-Type: application/json
+
+{
+
+}
+
+### Get Largest Data
+GET http://localhost:4004/odata/v4/catalog/POs('02BD2137-0890-1EEA-A6C2-BB55C1978999')/CatalogService.localhost:4004/odata/v4/catalog/POs('02BD2137-0890-1EEA-A6C2-BB55C1978999')/CatalogService.boost
+
+
+
+
+
