@@ -10,7 +10,6 @@ using {
 type Guid : String(32);
 
 context master {
-    // Business Partner
     entity businesspartner {
         key NODE_KEY      : Guid;
             BP_ROLE       : String(2);
